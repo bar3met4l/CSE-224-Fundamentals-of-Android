@@ -1,0 +1,53 @@
+1. The first screen that appears after an app is launched is known as a ___________?
+
+a.Main Activity
+
+b.Screen class
+
+c.Component Activity
+
+2. What are the advantages of using Jetpack Compose for Ul development? Check all that apply.
+
+a. It can help build a UI using less code    
+
+b. It simplifies the development of UI components for Android applications   
+
+c. It builds a UI without needing to use an Activity
+
+d.It helps developers maintain a consistent UI across multiple devices and platforms such as Android,       iOS and the web.  
+
+3. What is the purpose of View Groups when building an Android IJI? Select all that apply.
+
+a.To define the navigation paths between screens
+
+b.To allow for the creation of complex user interfaces
+
+c.To replace the use of TextView
+
+d.To provide a better organization of views.
+
+4. Which of these are commonly used views in Android applications? Select all that apply.
+
+a.ActivityVlew
+
+b.TextVieW
+
+c.ButtorMew
+
+d.TextField
+
+e.Button
+
+f.ImageView
+
+5.Which of the following are layout views that can be used in And roid IJI design. Select all that apply.
+
+a.UILayout
+
+b.RelativeLayout
+
+c.GridLayout
+
+d.LinearLayout
+
+e.ViewLayout
