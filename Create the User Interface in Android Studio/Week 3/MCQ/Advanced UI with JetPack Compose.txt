@@ -1,0 +1,135 @@
+1.What is the back stack used for in Android?
+
+A.forward navigation
+
+B.backward navigation
+
+C.generating routes
+
+D.database queries
+
+2.Which of the following must each NavHost be associated with?
+
+A.A destination.
+
+B.A Single Navcontroller.
+
+C.The NavGraph.
+
+D.A route.
+
+3. Which ofthe following is the correctwaytocreatea destination object fora Profile screen that implements the below
+Destinations interface?
+
+	interface Destinations{
+		val route: String
+	}
+
+A. 	Profile : Destinations{
+		override val route ="Profile"
+	 }
+
+B. 	object Profile : Destinations{
+		override val route ="Profile"
+	 }
+
+C. 	object Profile{
+		override val route ="Profile"
+	 }
+
+D.	object Destinations{
+		override val route = "Profile"
+	}
+
+4. Which of the following statements is true about defining a constant argument in a Destination?
+
+A.It helps organize the arguments.
+
+B.It is required.
+
+C.It reduces the amount of required code.
+
+5. Which of the following is the correct way to pass the argUserName variable in the below Destination object to
+navArgument ?
+
+    interface Destinations {
+     val route: String
+  }
+  object Profile : Destinations {
+     const val argUserName = "UserName"
+     override val route = "Profile"
+  }
+
+A. navArgument($UserName) { 
+    type = NavType.StringType 
+	}
+
+B. navArgument(Profile.argUserName) { 
+    type = NavType.StringType 
+	}
+
+C. navArgument(argUserName) { 
+     type = NavType.StringType 
+	}
+
+6.What is each bottom navigation element called?
+
+A.bottomNavItem
+
+B.bottomNavigationItem
+
+C.navigationItem
+
+7.What among the following elements is scrollable without adding the modifier? Select all that apply.
+
+A.Row
+
+B.Column
+
+C.LazyRow
+
+D.LazyColumn
+
+8.What is the most suitable element when you have an unknown or large number of items? Select all that apply.
+
+A.LazyRow
+
+B.LazyColumn
+
+C.Row
+
+D.Column
+
+9.Imagine you have defined the ProductScreen below:
+
+  @Composable
+  fun ProductScreen(productNumber: Int?) {
+     Column(
+         Modifier.fillMaxSize(),
+         verticalArrangement = Arrangement.Center,
+         horizontalAlignment = Alignment.CenterHorizontally
+     ) {
+         Text(
+             text = "Inventory Number $productNumber",
+             fontSize = 33.sp
+         )
+     }
+  }
+
+Which part of the following code is responsible for passing the value of the navigation argument to Productscreen?
+
+ProductScreen( it. arguments? . getlnt (Product . argProductNumber) )
+
+A. arguments
+
+B. .getlnt()
+
+C. .argProductNumber
+
+10. Which of the following best describes a NavController?
+
+A.NavControler acts as a container for displaying the current destination.
+
+B.NavController is responsible for navigating between destinations.
+
+C.NavController is a collection of navigable destinations.

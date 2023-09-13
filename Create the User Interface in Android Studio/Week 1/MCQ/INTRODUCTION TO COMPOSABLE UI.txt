@@ -1,0 +1,51 @@
+1.Declarative Ul programming allows developers to define the Ul and its behavior in a concise and expressive way by describing the desired result instead of the details of how to achieve it.
+
+A. TRUE
+
+B. FALSE
+
+2.In Jetpack Compose the 'Compose' item can best be described as:
+
+A.Compose is a tool that builds a Ul without needing to use an Activity
+
+B.A reusable view component.
+
+C.A library for developing Ul that is part of the Jetpack suite.
+
+3.What are the three main benefits to using a declarative approach when building an Android Ul? Select all that apply.
+
+A.Less complex Ul components
+
+B.More succinct code
+
+C.Improved performance
+
+D.Easier to read and debug code
+
+E.Reduced need for unit tests
+
+4.In this code,a composable function is defined. What is the name of this function?
+
+	@Composable
+      fun MainPanel(name: String){
+	  Text(text = "$name")
+      }
+
+A.Composable
+
+B.Text
+
+C.MainPanel
+
+5. In this code, a composable function is defined. In the second-last code line the "name" argument is passed to another function Text. What is the best description of this function?
+
+	@Composable
+      fun MainPanel(name: String){
+	  Text(text = "$name")
+      }
+
+A.A variable
+
+B.A built-in composable function in the Compose library.
+
+C.A function written by the developer.

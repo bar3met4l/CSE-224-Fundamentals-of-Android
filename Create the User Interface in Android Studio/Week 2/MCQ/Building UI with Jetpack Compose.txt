@@ -1,0 +1,110 @@
+1. When chaining modifiers, which order are they applied in?
+
+A.top to bottom
+
+B.left to right
+
+C.alphabetical order
+
+D.right to left
+
+2. Which of the following Material Components can be implemented using Jetpack Compose? Select all that apply.
+
+A.list
+
+B.text-field
+
+C.button
+
+D.card
+
+3. Which of the following is the correctwayto add a spacing of 10 dp around all four sides of a text composable?
+
+A.	Text(
+		text = "Hello World!",
+		modifier = Modifier.padding(10.dp)
+	)
+
+B.	Text(
+		text = "Hello World!",
+		padding = Modifier.padding(10.dp)
+	)
+
+C.	Text(
+		text = "Hello World!",
+		modifier = padding(10.dp)
+	)
+
+4. Which of the following is a keyword that retains the value ofa statevariable after recomposition?
+
+A.mutableState
+
+B.MutableStateOf
+
+C.remember
+
+D.mutate
+
+5. Which of the following is the correct programming term for executing a function when an event occurs?
+
+A. handling the event
+
+B. user action
+
+C. an event
+
+D. listeners
+
+6. Which of the following isa Ul pattern that provides aside-panel for navigating between different parts of the application?
+
+A.Backdrop Scaffold
+
+B.NavigationBar
+
+C.BottomSheetScaffold
+
+D.Navigation Drawer Scaffold
+
+7.Which of the following Design Systems can Jetpack Compose make it easy to implement?
+
+A.Material Design
+
+B.Human Interface Guidelines
+
+C.Polaris
+
+D.Uber Design
+
+8.Which of the following makes material components in Compose adaptable?
+
+A.slots
+
+B.lambdas
+
+C.scaffolds
+
+D.modifiers
+
+9.Which of the following Jetpack Compose Material components can be implemented as built-in composables? Select four that apply.
+
+A.TextField
+
+B.Pattern
+
+C.Button
+
+D.Slider
+
+E.Avatar
+
+F.Card
+
+10. Which of the following Ul patterns would be best suited to carry the name of the app and some buttons relevant to the current screen?
+
+A.a navigation power
+
+B.a top app bar
+
+C.floating action buttons
+
+D.snackbar

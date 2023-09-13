@@ -1,0 +1,312 @@
+1.True or False: Android does not provide a way for the 3rd party app to start up activities belonging to other apps.
+
+1.True
+
+2.False
+
+2.One of the fundamental differences between the traditional View system and Compose is their development philosophy. What are their approaches?
+
+A.The View system follows the imperative approach, while Compose is based on the declarative approach to building UI.
+
+B.The View system follows the declarative approach, while Compose is based on the imperative approach to building UI.
+
+C.The View system and Compose both use the imperative approach.
+
+D.The View system and Compose both use the declarative approach.
+
+3.How are composables positioned in the Box layout?
+
+A.Lay out horizontally
+
+B.Lay out vertically
+
+C.Placed on top of each other
+
+D.Screen
+
+4.Which statements are true about modifiers? Select all that apply.
+
+A.A modifier is responsible for modifying Activity behavior.
+
+B.When augmenting appearance, modifiers can act as decorators.
+
+C.Modifiers allow you to impart specific interactivity or behavior to the elements.
+
+5.In the code below, what is the reason behind usage of the remember function and mutableStateOf observable?
+
+val value = remember { mutableStateOf(/*some value*/) }
+
+A.Prevent reset of the variable value during recomposition.
+
+B.Reset of the variable value during function call.
+
+C.Reset of the variable value during recomposition.
+
+6.Which of the following are part of Jetpack navigation?
+Select all that apply. 
+
+A.NavController
+
+B.NavHost
+
+C.NavCompose
+
+D.NavGraph
+
+7.True or False: Lazy components only compose a subset of composables that are visible in viewport rather than composing it all at once. 
+
+A.True
+
+B.False
+
+8.What do the last two characters of the hexadecimal ARGB colors represent? 
+
+alt=0x00000000
+
+0x00000000
+
+A.The value of alpha channel.
+
+B.The value of Black color.
+
+C.The value of the green color.
+
+D.The value of blue color.
+
+E.The value of red color.
+
+9.Which unit would you use to set text size?
+
+A.both sp and dp can be used
+
+B.sp (scalable pixel)
+
+C.dp (density independent pixel)
+
+10.What is the output of the following code?
+
+ var visible by remember { 
+    mutableStateOf(true) 
+} Column { 
+    AnimatedVisibility(visible = visible) { 
+    Text(text = "Hello, world!") 
+} Button(onClick = { visible = !visible }) { 
+    Text("Button ") 
+    } 
+}
+
+A.The first Button click will instantly show the Text and the following Button click will have no effect.
+
+B.The first Button click will instantly hide the Text and the following Button click will instantly show the Text.
+
+C.The first Button click will start the fade in animation of the Text and following Button click will start the fade out animation of the Text.
+
+D.The first Button click will start the fade out animation of the Text and the following Button click will start fade in animation of the Text.
+
+11.Which of the following is represented by an Activity?
+
+A.a UI pattern
+
+B.the application screen
+
+C.the main program entry point
+
+D.a component
+
+12.Which of the following is the name of the class used to represent a view in the traditional view system?
+
+A.ImageView
+
+B.View
+
+C.TextView
+
+D.ViewGroup
+
+13.Which of the following lifecycle states does an Activity spend the most time in?
+
+A.Started
+
+B.Created
+
+C.Paused
+
+D.Resumed
+
+14.Which of the following are examples of view groups? Select all that apply.
+
+A.ImageViewLayout
+
+B.RelativeLayout
+
+C.LinearLayout
+
+D.FrameLayout
+
+15.Which of the following is the approach used by Jetpack Compose to build a user interface?
+
+A.declarative
+
+B.hierarchical
+
+C.perative
+
+D.aditional
+
+16.When writing composable functions, which of the following do you add before the start of the function definition?
+
+A.omposable
+
+B.notation
+
+C.mposable
+
+D.unction
+
+17.Which of the following annotations is used to denote a composable component?
+
+A.omponent
+
+B.escription
+
+C.@fun
+
+D.@Composable.
+
+18.Which of the following built-in layouts in Compose places composables vertically?
+
+A.box
+
+B.layout 
+
+C.row
+
+D.column
+
+19.Which of the following annotations allows you to preview designs built with Jetpack Compose?
+
+A.Preview
+
+B.@Preview
+
+C.@Composable
+
+20.Which of the following modifiers is used to set the background color of a composable?
+
+A.background
+
+B.color
+
+C.layoutColor 
+
+D.backgroundColor
+
+21.Imagine you have an Image composable displaying a cat with a height of 300 dp. Which of the following is the correct way to add rounded corners of 30 dp to the image? 
+
+A.Image(
+ painter = painterResource(id = R.drawable.cat), 
+ contentDescription = “an image of a cat”,
+ Modifier.height(300.dp).roundedCornerShape(30.dp)
+)
+
+B.Image(
+ painter = painterResource(id = R.drawable.cat), 
+ contentDescription = “an image of a cat”,
+ Modifier.height(300.dp).clip(RoundedCornerShape(30.dp))
+)
+
+C.Column(
+ painter = painterResource(id = R.drawable.cat), 
+ contentDescription = “an image of a cat”,
+ Modifier.height(300.dp).clip(RoundedCornerShape(30.dp))
+)
+
+22.Which of the following is the term for the response to an event or executing a certain piece of code when an event occurs?
+
+A.handling the event
+
+B.event 
+
+C.user action
+
+D.event listener
+
+23.Which of the following is the event modifier that allows for a different function to be executed when a user long-presses on a composable?
+
+A.draggable
+
+B.custom gestures
+
+C.combinedClickable
+
+D.clickable
+
+24.Which of the following refers to a current snapshot or condition of a program that changed over time?
+
+A.user interfaces
+
+B.activities 
+
+C.events
+
+D.state
+
+25.Which of the following is a component provided by Jetpack Compose that makes it convenient to implement the Material Design system?
+
+A.Top App Bar
+
+B.Scaffold
+
+C.Material Component
+
+D.Navigation Drawer
+
+26.Which of the following keywords is used for creating an object without creating a class?
+
+A.object
+
+B.route
+
+C.override
+
+D.interface
+
+27.Which of the following Jetpack Compose layout arrangements adds equal space to all children?
+
+A.start
+
+B.space evenly
+
+C.center
+
+D.space around
+
+28.When would you use a lazy layout?
+
+A.When you have performance issues.
+
+B.When designing a responsive layout.
+
+C.When you have a large number of items to display as a list.
+
+D.When you have a small number of items to display as a list.
+
+29.Which of the following is a benefit of using a Theme?
+
+A.A Theme creates cross platform applications.
+
+B.A Theme automatically generates responsive layouts.
+
+C.A Theme reduces the number of screens an application will require.
+
+D.A Theme allows you to separate design details from the UI structure and behavior.
+
+30.Which of the following APIs can be used to animate a value in Jetpack Compose?
+
+A.animatedVisibility API
+
+B.animate*AsState API
+
+C.animate API
+
+D.remember API
