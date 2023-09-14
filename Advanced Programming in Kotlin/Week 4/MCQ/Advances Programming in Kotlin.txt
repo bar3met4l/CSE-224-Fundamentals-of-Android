@@ -1,0 +1,121 @@
+1.Which option represents the correct way to call the function 'sayHello' defined in the object below:
+
+object Greeting { 
+ fun sayHello() = println("hello") 
+}
+
+A.println(Greeting(). sayHello())
+
+B.println(Greeting. sayHello())
+
+C.println(Greeting. sayHello)
+
+2.Which of these is correct if you wish to navigate from an activity ‘SourceActivity’ to another activity ‘DestinationActivity’ in Android? (Assume ‘Context’ object can be referenced using ‘context’ and instance of ‘SourceActivity’ can be referenced as ‘sourceActivity’). Select all that apply.
+
+A.val intent = Intent(context, DestinationActivity::class.java)
+
+B.val intent = Intent(sourceActivity, DestinationActivity::class.java)
+
+C.val intent = Intent(DestinationActivity::class.java, sourceActivity)
+
+D.val intent = Intent(SourceActivity::class.java, DestinationActivity::class.java)
+
+3.You are asked to implement an extension function for a class named ‘FoodItem’ that would print out its ingredients field. How would the extension function look?
+
+A.fun List<Ingredient>.printIngredients(foodItem: FoodItem) { println(this) }
+
+B.fun FoodItem.printIngredients() { println(ingredients) }
+
+C.fun FoodItem.printIngredients(ingredients: List<Ingredient>) { println(ingredients) }
+
+D.fun printIngredients(foodItem: FoodItem) { println(foodItem.ingredients) }
+
+4.When should you use mocks in your tests?
+
+A.When you need to test only some specific behavior of an object
+
+B.When you need to define a complete alternate definition of an object to be used for testing.
+
+C.When there are objects that are not to be tested but are needed because the code under test depends on them.
+
+5.Once features and software requirements are planned, what is the next step in a test-driven development approach?
+
+A.Executing tests
+
+B.Refactoring code to fix errors
+
+C.Writing code to implement requirements
+
+D.Writing tests
+
+6.You need to instantiate a list of numbers. Which of the following statements are valid in Kotlin?
+
+A.val numbers: List<Int> = listOf(1, 4, 9)
+
+B.val numbers: List<Int> = 1, 4, 9
+
+C.val numbers: List<Int> = [1, 4, 9]
+
+D.val numbers: List<Int> = (1, 4, 9)
+
+7.What is the output of this code:
+
+val map = mapOf(
+ 1 to 90, 
+ 2 to 93,
+ 3 to 91,
+ 4 to 93,
+ 2 to 95,
+ 5 to 93
+)
+println(map)
+
+
+A.{1=90, 2=93, 3=91, 4=93, 5=93}
+
+B.{1=90, 2=95, 3=91, 4=93, 5=93}
+
+C.{1=90, 2=93, 3=91, 4=93, 2=95, 5=93}
+
+8.Which of these represents a correct syntax of defining a generic class?
+
+A.class <T>.Item(t: T) { }
+
+B.class <T> Item(t: T) { }
+
+C.class Item<T>(t: T) { }
+
+9.Which of these below are higher-order functions? Select all that apply.
+
+A.fun display(x: Int) : Unit
+
+B.fun display(): (Int) -> Unit
+
+C.fun display(x: (Int) -> Unit)
+
+D.fun display(x: (Int)) -> Unit
+
+10.What will be the output of the following code?
+
+val numberMap = mapOf(
+ 5 to 6,
+ 3 to 2,
+ 8 to 7,
+ 4 to 1
+)
+val output = numberMap.map { entry ->
+ entry.value
+}.filter { 
+ it > 3
+}.fold(2) { x, y ->
+ x + y
+}
+println(output)
+
+A.15
+
+B.13
+
+C.3
+
+D.17

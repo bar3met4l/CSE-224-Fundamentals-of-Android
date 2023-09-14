@@ -1,0 +1,92 @@
+1.For a class Rectangle, which of these represents the correct syntax for defining an extension function getWidth?
+
+A.fun Rectangle getWidth(): Int
+
+B.fun Rectangle.getWidth(): Int
+
+C.fun getWidth<Rectangle>(): Int
+
+2.For the extension function fun Rectangle.getWidth(): Int, what is the correct way to call the function in the code?
+
+A.Rectangle.getWidth()
+
+B.Rectangle().getWidth()
+
+C.getWidth(Rectangle())
+
+3.Which type of testing is performed to test individual components of an application’s code logic?
+
+A.Integration testing
+
+B.Unit testing
+
+C.End-to-end testing
+
+4.While using JUnit, which annotation is used to mark a function as a unit test?
+
+A.@UnitTest
+
+B.@Test
+
+C.@JUnitTest
+
+5.When should you use mocks in your tests?
+
+A.When you need to define a complete alternate definition of an object to be used for testing.
+
+B.When there are objects that are not to be tested but are needed because the code under test depends on them.
+
+C.When you need to test only some specific behavior of an object
+
+6.Which of these is a definition of the List collection type?
+
+A.An unordered group of elements that cannot contain duplicate elements.
+
+B.An ordered group of elements that can contain duplicate elements.
+
+C.An unordered group of elements that can contain duplicate elements.
+
+7.What is the output of the code below:
+
+val numberSet = setOf(1, 8, 5, 7, 5, 2)
+println(numberSet)
+
+A.[1, 8, 5, 7, 5, 2]
+
+B.[1, 8, 5, 7, 2]
+
+C.[1, 8, 7, 2]
+
+8.What is the output of the following code:
+
+val map = mapOf(
+ 1 to 90, 
+ 2 to 93,
+ 3 to 91,
+ 4 to 93,
+ 2 to 95,
+ 5 to 93
+)
+println(map)
+
+A.{1=90, 2=93, 3=91, 4=93, 5=93}
+
+B.{1=90, 2=95, 3=91, 4=93, 5=93}
+
+C.{1=90, 2=93, 3=91, 4=93, 2=95, 5=93}
+
+9.Which of these represents the correct syntax for defining a generic class?
+
+A.class <T> Item(t: T) { }
+
+B.class Item<T>(t: T) { }
+
+C.class <T>.Item(t: T) { }
+
+10.Which of these represents the correct syntax for defining a generic function?
+
+A.fun sampleFunction<T> (item: T) { }
+
+B.fun <T> sampleFunction(item: T) { }
+
+C.fun <T>.sampleFunction(item: T) { }

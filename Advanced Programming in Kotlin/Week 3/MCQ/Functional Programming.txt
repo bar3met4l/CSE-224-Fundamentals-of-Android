@@ -1,0 +1,137 @@
+1.Which of these are correct ways to instantiate a function type. Select all that apply.
+
+A.Using a lambda expression.
+
+B.Using the function name.
+
+C.Using a callable reference to existing declaration using the ‘::’ operator
+
+D.Using instance of a user defined class that implements a function type as an interface.
+
+2.Which of these is a correct usage of lambda expression for the given function definition?
+
+fun execute(number: Int, function: (Int) -> String) {
+ println(function(number))
+}
+
+A.execute(100) { "Score $it" }
+
+B.execute(100) ( "Score $it" )
+
+C.execute("Score") { "$it 100" }
+
+3.Which of the these is a correct lambda expression syntax?
+
+A.val difference: (Int, Int) -> Int = { x: Int, y: Int -> x - y }
+
+B.val difference: (Int, Int) -> Int = x: Int, y: Int -> x - y
+
+C.val difference: (Int, Int) -> Int = x: Int, y: Int -> { x - y }
+
+4.Which listener interface provided by the Android framework is used to listen for a button press event?
+
+A.View.OnPressListener
+
+BView.OnClickListener
+
+C.View.OnTapListener
+
+5.Which of these are higher-order functions? Select all that apply.
+
+A.fun display(): (Int) -> Unit
+
+B.fun display(x: (Int) -> Unit)
+
+C.fun display(x: (Int)) -> Unit
+
+D.fun display(x: Int) : Unit
+
+6.What is the output of this code?
+
+val number = 3
+var output = 2
+repeat(5) { index ->
+ output += (index * number)
+}
+println(output)
+
+A.32
+
+B.47
+
+C.30
+
+7.What is the output of the following code?
+
+var sum = 0
+
+val numberList = listOf(1, 4, 6, 7, 9) 
+numberList.forEach { number ->
+ sum += number
+}
+println(sum)
+
+A.9
+
+B.1
+
+C.27
+
+8.What is the output of this code:
+
+data class Chocolate( 
+ val flavor: String, 
+ val price: Int 
+) 
+val list = listOf( 
+ Chocolate("Dark", 7), 
+ Chocolate("Milk", 4), 
+ Chocolate("Coffee", 2) 
+)
+val output = list.map { 
+ it.flavor 
+} 
+println(output)
+
+
+A.[Dark, Milk, Coffee]
+
+B.[Chocolate(flavor=Dark, price=7), Chocolate(flavor=Milk, price=4), Chocolate(flavor=Coffee, price=2)]
+
+C.[7, 4, 2]
+
+9.What is the output of this code:
+
+data class Chocolate( 
+ val flavor: String, 
+ val price: Int 
+) 
+val list = listOf( 
+ Chocolate("Dark", 7), 
+ Chocolate("Milk", 4), 
+ Chocolate("Coffee", 2) 
+)
+val output = list.filter { 
+ it.price > 3
+} 
+println(output)
+
+A.[Chocolate(flavor=Coffee, price=2)]
+
+B.[Chocolate(flavor=Dark, price=7), Chocolate(flavor=Milk, price=4)]
+
+C.[Chocolate(flavor=Dark, price=7), Chocolate(flavor=Milk, price=4), Chocolate(flavor=Coffee, price=2)]
+
+10.What is the output of this code: 
+
+val list = listOf(9, 3, 1, 6) 
+val output = list.fold(1) { x, y -> 
+ x + y 
+} 
+println(output)
+
+A.20
+
+B.18
+
+C.1

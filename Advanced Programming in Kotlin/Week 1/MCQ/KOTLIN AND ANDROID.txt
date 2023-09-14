@@ -1,0 +1,116 @@
+Coursera
+
+    Advanced Programming in Kotlin
+
+
+1.Which option demonstrates the correct way to initialize an object in Kotlin? 
+
+A.object CustomObject( ) { }
+
+B.object CustomObject( )
+
+C.object CustomObject { }
+
+2.Which option represents the correct way to call the function getNumberOfWheels defined in the object below:
+
+object Car {
+ fun getNumberOfWheels() = 4
+}
+
+A.println(Car().getNumberOfWheels())
+
+B.println(Car.getNumberOfWheels)
+
+C.println(Car.getNumberOfWheels())
+
+3.What is the correct syntax to call the function printHello defined in the code below:
+
+class Outer {
+    class Nested {
+        fun printHello() {
+            println("Hello")
+        }
+    }
+}
+
+A.Outer.Nested().printHello()
+
+B.Outer().Nested().printHello()
+
+C.Nested().printHello()
+
+4.What is the correct syntax to call the function printHello defined in the code below:
+
+class Outer {
+    inner class Inner {
+        fun printHello() {
+            println("Hello")
+        }
+    }
+}
+
+A.Outer().Inner().printHello()
+
+B.Inner().printHello()
+
+C.Outer.Inner().printHello()
+
+5.Which of these are correct ways to access the variable wheelCount in the code below:
+
+class Car {
+    companion object {
+        val wheelCount = 4
+    }
+}
+
+A.Car.wheelCount
+
+B.Car.companion.wheelCount
+
+C.Car.Companion.wheelCount
+
+D.Car().wheelCount
+
+6.When should you use a companion object in a class?
+
+A.To define members that should not be accessible outside the class
+
+B.To define members that should be accessible without an object of a class and only using the class name
+
+C.To define members that should be accessible by an object of a class
+Correct
+
+7.Which of the following keywords is used to declare a constant in Kotlin?
+
+A.constant
+
+B.final
+
+C.const
+
+8.Which of these is correct if you wish to navigate from an activity called SourceActivity to another activity called  DestinationActivity in Android? (Select all that apply)
+(Assume that the Context object can be referenced using context and an instance of SourceActivity can be referenced as sourceActivity)
+
+A.val intent = Intent(context, DestinationActivity::class.java)
+
+B.val intent = Intent(SourceActivity::class.java, DestinationActivity::class.java)
+
+C.val intent = Intent(DestinationActivity::class.java, sourceActivity)
+
+D.val intent = Intent(sourceActivity, DestinationActivity::class.java)
+
+9.What is the right way to use the function startActivity to start an activity? 
+
+A.context.startActivity(intent)
+
+B.startActivity(context, intent) 
+
+C.Activity.startActivity(intent)
+
+10.Which one of the below lines can you use to pass an argument to an activity? (Assume an instance of Intent can be referenced using intent variable)
+
+A.intent.putExtra(“message”, “hello”)
+
+B.intent.getExtra(“message”, “hello”)
+
+C.intent.putExtra(“hello”)
